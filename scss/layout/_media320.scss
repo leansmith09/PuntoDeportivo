@@ -1,0 +1,36 @@
+@media (max-width: 320px) {
+    .noticia div nav {
+      background-color: deeppink;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hombre {
+      background-color: deeppink;
+    }
+  
+    .river {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .river1 {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .contactanos div {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contactanos-redes div {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .flex-redes div {
+      flex-direction: column;
+      align-items: center;
+    }
+  }

@@ -1,0 +1,106 @@
+/* MAIN-INDEX- */
+.punto {
+  @include flex(center, center);
+  background-position: center;
+  background-size: auto;
+  background-attachment: fixed;
+}
+
+.hero {
+  @include flex(space-evenly);
+}
+
+/* MAIN-NIKE-ADIDAS-FILA */
+
+h2.hombre {
+  align-content: center;
+  background-color: #d6076e;
+  font-family: 'Franklin Gothic Medium';
+  font-size: 100%;
+  font-weight: 300;
+  list-style-type: none;
+}
+
+.river {
+  @include grid(repeat(4, 1fr), repeat(1, 4fr));
+}
+
+.river1 {
+  @extend .river;
+
+  
+
+  &:hover {
+    border: 2px solid cornflowerblue;
+  }
+}
+
+/* MAIN-FORMULARIO */
+
+:root {
+  --formulario-bg-color: #ffffff;
+  --formulario-border-radius: 10px;
+  --formulario-input-border-color: #ccc;
+  --formulario-input-border-radius: 5px;
+  --formulario-submit-bg-color: #4CAF50;
+  --formulario-submit-color: #fff;
+  --formulario-submit-border-radius: 5px;
+}
+
+$formulario-bg-color: var(--formulario-bg-color);
+$formulario-border-radius: var(--formulario-border-radius);
+$formulario-input-border-color: var(--formulario-input-border-color);
+$formulario-input-border-radius: var(--formulario-input-border-radius);
+$formulario-submit-bg-color: var(--formulario-submit-bg-color);
+$formulario-submit-color: var(--formulario-submit-color);
+$formulario-submit-border-radius: var(--formulario-submit-border-radius);
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  form {
+    width: 350px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: $formulario-bg-color;
+    border-radius: $formulario-border-radius;
+
+    fieldset {
+      border: none;
+      padding: 0;
+      margin: 0;
+
+      legend {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      input[type="text"],
+      input[type="password"],
+      input[type="email"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid $formulario-input-border-color;
+        border-radius: $formulario-input-border-radius;
+      }
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: $formulario-submit-bg-color;
+      color: $formulario-submit-color;
+      border: none;
+      border-radius: $formulario-submit-border-radius;
+      cursor: pointer;
+    }
+  }
+}

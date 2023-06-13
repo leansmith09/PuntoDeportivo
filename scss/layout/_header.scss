@@ -1,0 +1,32 @@
+header {
+    background-color: orangered;
+
+    .nav:active {
+        color: royalblue;
+    }
+}
+
+.noticia {
+    background-color: orangered;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+
+    h1 {
+        color: black;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a h2 {
+        color: rgb(240, 232, 170);
+        border-bottom: 3px solid black;
+    }
+
+    div nav {
+        justify-content: space-around;
+        display: flex;
+        padding-bottom: 15px;
+    }
+}

@@ -1,0 +1,36 @@
+footer {
+  background-color:$color-principal;
+
+  .contactanos-img {
+    @include flex(space-evenly);
+    padding-top: 15px;
+  }
+
+  .contactanos-redes {
+    @include flex(space-between, center);
+  }
+
+  .contactanos-texto {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+
+    h3 {
+      color: rgb(240, 232, 170);
+      margin-right: 5px;
+    }
+  }
+
+  .flex-redes {
+    @include flex(flex-end, center);
+
+    h3 {
+      margin-right: 10px;
+      color: rgb(240, 232, 170);
+    }
+
+    img {
+      margin-right: 10px;
+    }
+  }
+}

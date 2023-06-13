@@ -1,0 +1,18 @@
+$color-principal: rgb(255, 115, 0) ;
+$color-secundario: black ;
+
+// Variables
+
+$body-font-family: 'Arial', sans-serif;
+$body-font-size: 16px;
+$heading-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+// Estilos
+body {
+  font-family: $body-font-family;
+  font-size: $body-font-size;
+}
+
+h1, h2 {
+  font-family: $heading-font-family;
+}
