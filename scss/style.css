@@ -58,7 +58,7 @@ a {
 /* MAIN-NIKE-ADIDAS-FILA */
 .hombre {
   align-content: center;
-  background-color: rgb(156, 57, 0);
+  background-color: rgb(133, 202, 5);
   font-family: "Franklin Gothic Medium";
   font-size: 20%;
   font-weight: 300;
@@ -71,7 +71,7 @@ a {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
   margin: 2em;
-  background: rgb(156, 57, 0);
+  background: rgb(133, 202, 5);
   padding: 1em;
 }
 
