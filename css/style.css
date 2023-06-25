@@ -12,6 +12,92 @@ body {
   font-size: 16px;
 }
 
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: #333;
+  padding: 20px;
+}
+
+.hamburger-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu-btn {
+  display: block;
+  cursor: pointer;
+}
+
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+  content: "";
+  position: absolute;
+}
+
+.menu-icon::before {
+  transform: translateY(-10px);
+}
+
+.menu-icon::after {
+  transform: translateY(10px);
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked + .menu-btn .menu-icon {
+  transform: rotate(45deg);
+}
+
+#menu-toggle:checked + .menu-btn .menu-icon::before {
+  transform: rotate(90deg) translateX(6px);
+}
+
+#menu-toggle:checked + .menu-btn .menu-icon::after {
+  transform: rotate(90deg) translateX(-6px);
+}
+
+.nav {
+  display: none;
+  background-color: #333;
+  padding: 20px;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+}
+
+#menu-toggle:checked ~ .nav {
+  display: block;
+}
+
+.nav a {
+  display: block;
+  color: #fff;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
 header {
   animation: slide-in 1s ease-in-out;
   background-color: orangered;
